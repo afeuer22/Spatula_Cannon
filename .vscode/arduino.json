@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "avrisp",
+    "sketch": "motorTest\\motorTest.ino",
+    "port": "COM4"
+}
