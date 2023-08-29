@@ -31,5 +31,37 @@ namespace SpatulaCannon
         {
             port.Open();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left) 
+            {
+                port.Write("L");
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                port.Write("R");
+            }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            port.Write("S");
+        }
     }
 }
